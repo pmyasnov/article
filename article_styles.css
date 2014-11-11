@@ -1,0 +1,157 @@
+/*Ниспадающее меню*/
+
+body{
+    background: #DCDCDC;
+}
+ 
+   body{margin:0; background-color:#f0f0f0;}
+	
+	p {
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:13px;
+		text-align:center;
+	}	
+	
+	.block1 { 
+		text-align:center;
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:16px;
+		/*background-color:#f5f5f5;
+		border-top:1px solid #FFF;
+		border-left:1px solid #FFF;
+		border-bottom:1px solid #ddd;
+		border-right:1px solid #ddd;
+		border-radius:5px;	*/
+		width:50%;
+		height:30px;
+		margin:25px 25% 0 25%;
+		top:15px;
+	}	
+	
+	.text {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	margin:0 15px 100px 15px;
+	}
+	
+	
+	table.delit
+   {
+       width: 100%;
+       border: 0;
+       align: center;
+   }
+
+   .tab1 {
+		border-right: steelblue 1px solid;
+		border-top: steelblue 1px solid;
+	}
+   
+	.tab2 {
+		border-left: steelblue 1px solid;
+		border-bottom: steelblue 1px solid;
+	}
+	
+	.content_tab {
+		font-size: 12px;
+		text-align: justify;
+		font-family: Times New Roman,sans-serif;
+}
+	
+	ul, li {
+		margin:0;
+		padding:0;                        	
+		list-style-type:none;	   /*Обнуляем отступы*/
+ 	}
+	
+	/*Задаём параметры блока, содержащего основное меню*/
+	#menu {
+		font-family:Verdana, Geneva, sans-serif;
+		font-size:12px;
+		display:block;
+		position:absolute;
+		top:30px;
+		left:15px;
+			
+	}
+	
+	/*Задаём стили для разделов нашего меню*/
+	#menu > li {
+		display:inline-block;
+		position:relative;
+
+	}
+	
+	/*Задаём стили для подразделов нашего меню*/
+	#menu > li > a {
+		display:inline-block;
+		height:20px;
+		padding:10px;
+		background-color:#f5f5f5;          /*Задаем рамку*/
+		border-top:1px solid #FFF;
+		border-left:1px solid #FFF;
+		border-bottom:1px solid #ddd;
+		border-right:1px solid #ddd;
+		border-radius:5px;						
+	}
+	
+	/*Стили для ссылки при наведении мыши*/
+	#menu > li:hover > a {
+		color:#009999;	
+	}
+	
+    /*Стили для скрытого выпадающего меню*/
+	#menu > li > ul {
+		position:absolute;
+		top:42px;
+		left:0px;
+		display:none;	
+	}
+	
+	/*Делаем скрытую часть видимой*/
+	#menu > li:hover > ul {
+		display:block;	
+		box-shadow:1px 1px 5px #ddd;
+	}
+	
+	/*Стили для кнопок*/
+	#menu > li:hover > ul > li {
+		display:inline-block;
+	}
+	
+	
+	#menu > li:hover > ul > li > a {
+		display:inline-block;
+		width:200px;
+		padding:10px;
+		background-color:#f2f2f2;
+	
+		border-top:1px solid #FFF;
+		border-left:1px solid #FFF;
+		border-bottom:1px solid #ddd;
+		border-right:1px solid #ddd;
+		border-radius:5px;	
+		
+	}
+	
+	a {
+		text-decoration:none;
+		color:#242424;	
+	}
+	
+	a:hover {
+		color:#009999;	
+	}
+	
+	#scrollup {
+		position: fixed; /* фиксированная позиция */
+		opacity: 0.8; /* прозрачность */
+		padding: 15px 10px 10px; /* отступы */
+		background: #aaa;
+		border-radius: 5px; /* скругление углов */
+		left: 10px; /* отступ слева */
+		bottom: 10px;		/* отступ снизу */
+    	display: none; /* спрятать блок */
+		cursor: pointer;
+	}
+	

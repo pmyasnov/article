@@ -64,14 +64,15 @@ body{
 	
 	.raised {
 		background: transparent;
-		width: 100%;
+		width: 98%;
+		margin: 0 15px 0;
 	}
 	
 	.boxcontent {
 		display: block;
 		background: gainsboro;
-		border-left: 0 solid #fff;
-		border-right: 1px solid #999;
+		/*border-left: 1px solid #fff;
+		border-right: 1px solid #999;*/
 }
 	
 	.tab_of_contents {

@@ -1,17 +1,19 @@
 /*Ниспадающее меню*/
-
 body{
     background: #DCDCDC;
 }
- 
-   body{margin:0; background: url(background.jpg); background-size: cover; /*background-color:#f0f0f0;*/}
-	
+    body{
+	background: url(background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	} /*background-color:#f0f0f0;*/	
 	p {
 		font-family:Verdana, Geneva, sans-serif;
 		font-size:16px;
 		text-align:center;
 	}	
-	
 	.main {
 		font-family:Verdana, Geneva, sans-serif;
 		font-size:12px;
@@ -20,7 +22,6 @@ body{
 		top:10px;
 		left:20px;
 	}
-	
 	.block1 { 
 		text-align:center;
 		font-family:Verdana, Geneva, sans-serif;
@@ -36,7 +37,6 @@ body{
 		margin:25px 30% 10% 25%;
 		top:15px;
 	}	
-	
 	.button_main {
 		font-family:Verdana, Geneva, sans-serif;
 		font-size:12px;
@@ -55,67 +55,56 @@ body{
 		border-right:1px solid #ddd;
 		border-radius:5px;	
 	}	
-	
 	.text {
 		font-family:Verdana, Geneva, sans-serif;
 		font-size:10pt;
 		margin:0 15px 100px 15px;
 	}
-	
 	.raised {
 		background: transparent;
 		width: 98%;
 		margin: 0 15px 0;
 	}
-	
 	.boxcontent {
 		display: block;
 		background: gainsboro;
 		/*border-left: 1px solid #fff;
 		border-right: 1px solid #999;*/
 }
-	
 	.tab_of_contents {
 		font-family:Verdana, Geneva, sans-serif;
 		font-size:12px;
 		text-align:center;
 		margin: 0;
 	}
-	
 	table.delit {
        width: 100%;
        border: 0;
-       align: center;
-   }
-
+       text-align:center;
+    }
 	td.delit6 {
 		height: 5px;
 		border: 0;
-		align: center;
+		text-align: center;
 }
-   
    .tab1 {
 		border-right: steelblue 1px solid;
 		border-top: steelblue 1px solid;
 	}
-   
 	.tab2 {
 		border-left: steelblue 1px solid;
 		border-bottom: steelblue 1px solid;
 	}
-	
 	.content_tab {
 		font-size: 12px;
 		text-align: justify;
 		font-family: Times New Roman,sans-serif;
 }
-	
 	ul, li {
 		margin:0;
 		padding:0;                        	
 		list-style-type:none;	   /*Обнуляем отступы*/
  	}
-	
 	/*Задаём параметры блока, содержащего основное меню*/
 	#menu {
 		font-family:Verdana, Geneva, sans-serif;
@@ -125,14 +114,12 @@ body{
 		top:30px;
 		left:15px;
 	}
-	
 	/*Задаём стили для разделов нашего меню*/
 	#menu > li {
 		display:inline-block;
 		position:relative;
 
 	}
-	
 	/*Задаём стили для подразделов нашего меню*/
 	#menu > li > a {
 		display:inline-block;
@@ -145,12 +132,10 @@ body{
 		border-right:1px solid #ddd;
 		border-radius:5px;						
 	}
-	
 	/*Стили для ссылки при наведении мыши*/
 	#menu > li:hover > a {
 		color:#009999;	
 	}
-	
     /*Стили для скрытого выпадающего меню*/
 	#menu > li > ul {
 		position:absolute;
@@ -158,19 +143,15 @@ body{
 		left:0px;
 		display:none;	
 	}
-	
 	/*Делаем скрытую часть видимой*/
 	#menu > li:hover > ul {
 		display:block;	
 		box-shadow:1px 1px 5px #ddd;
 	}
-	
 	/*Стили для кнопок*/
 	#menu > li:hover > ul > li {
 		display:inline-block;
 	}
-	
-	
 	#menu > li:hover > ul > li > a {
 		display:inline-block;
 		width:200px;
@@ -184,16 +165,13 @@ body{
 		border-radius:5px;	
 		
 	}
-	
 	a {
 		text-decoration:none;
 		color:#242424;	
 	}
-	
 	a:hover {
 		color:#009999;	
 	}
-	
 	#scrollup {
 		position: fixed; /* фиксированная позиция */
 		opacity: 0.8; /* прозрачность */
@@ -205,4 +183,3 @@ body{
     	display: none; /* спрятать блок */
 		cursor: pointer;
 	}
-	

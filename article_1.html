@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title> Научная статья </title>
-	<link rel="stylesheet" type="text/css" href="article_styles.css" />
+	<link rel="stylesheet" type="text/css" href="article_styles.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome.css">
 	<style type="text/css">
 	</style>
 	</head>
@@ -13,14 +14,14 @@
 				<tbody>
 					<tr>
 						<td bgcolor="whitesmoke">
-							<center><div style="font-size:20px;"><b>Наука и Солнечная Система</b></div></center>
+							<div style="font-size:20px;"><b><i class="fa fa-moon-o fa-spin fa-2x pull-left"></i>Наука и Солнечная Система<i class="fa fa-sun-o fa-spin fa-2x pull-right"></i></b></div>
 						</td>
 					</tr>
 				</tbody>
 			</table>	
 		</div>	
 		<div class="button_main">
-			<a href="index.html" class="main"> На главную </a>
+			<a href="index.html" class="main"><i class="fa fa-home fa-2x"></i> На главную </a>
 		</div>	
 		<table class="delit">
 			<tbody>
@@ -31,11 +32,11 @@
 			</tbody>
 		</table>		
 		<ul id="menu">
-			<li><a href="#l">Оглавление</a>
+			<li><a href="#"><i class="fa fa-list-alt"></i>&nbsp;Оглавление</a>
 				<ul>
-					<li><a href="#top"> <!--target="_blank"--> Раздел I. Наука и техника</a></li>
-					<li><a href="article_2.html">Раздел II. Роботы или люди</a></li>
-					<li><a href="article_3.html">Раздел III. Телескопы и зонды</a></li>
+					<li><a href="#top"><i class="fa fa-globe"></i>&nbsp;Раздел I. Наука и техника</a></li>
+					<li><a href="article_2.html"><i class="fa fa-globe"></i>&nbsp;Раздел II. Роботы или люди</a></li>
+					<li><a href="article_3.html"><i class="fa fa-globe"></i>&nbsp;Раздел III. Телескопы и зонды</a></li>
 				</ul>
 			</li>       
 		</ul>
@@ -221,36 +222,37 @@
 			</div>
 		</div>
 		<div id="scrollup"><img alt="Прокрутить вверх" src="up.png"></div>
+		
 		<script type='text/javascript'>
-		window.onload = function() { // после загрузки страницы
+			window.onload = function() { // после загрузки страницы
 
-			var scrollUp = document.getElementById('scrollup'); // найти элемент
+				var scrollUp = document.getElementById('scrollup'); // найти элемент
 
-			scrollUp.onmouseover = function() { // добавить прозрачность
-				scrollUp.style.opacity=0.3;
-				scrollUp.style.filter  = 'alpha(opacity=30)';
-			}
+				scrollUp.onmouseover = function() { // добавить прозрачность
+					scrollUp.style.opacity=0.3;
+					scrollUp.style.filter  = 'alpha(opacity=30)';
+				}
 
-			scrollUp.onmouseout = function() { //убрать прозрачность
-				scrollUp.style.opacity = 0.5;
-				scrollUp.style.filter  = 'alpha(opacity=50)';
-			}
+				scrollUp.onmouseout = function() { //убрать прозрачность
+					scrollUp.style.opacity = 0.5;
+					scrollUp.style.filter  = 'alpha(opacity=50)';
+				}
 
-			scrollUp.onclick = function() { //обработка клика
-				window.scrollTo(0,0);
-			}
+				scrollUp.onclick = function() { //обработка клика
+					window.scrollTo(0,0);
+				}
 
-			// показать кнопку
+				// показать кнопку
 
-			window.onscroll = function () { // при скролле показывать и прятать блок
-				if ( window.pageYOffset > 0 ) {
-				scrollUp.style.display = 'block';
-				} 
-				else {
-					scrollUp.style.display = 'none';
+				window.onscroll = function () { // при скролле показывать и прятать блок
+					if ( window.pageYOffset > 0 ) {
+						scrollUp.style.display = 'block';
+					} 
+					else {
+						scrollUp.style.display = 'none';
+					}
 				}
 			}
-		}
 		</script>
    </body>
 </html>
